@@ -7,6 +7,7 @@ const statementSchema = new Schema({
     statement: { type: String },
     caseStatus: { type: String, enum: ['Open', 'Closed', 'Cold Case'] },
     civilianId: { type: String },
+    date: {type: Date},
     createdAt: { type: Date, default: Date.now()},
     updatedAt: { type: Date, default: Date.now()}
 });

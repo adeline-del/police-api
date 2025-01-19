@@ -18,7 +18,7 @@ export const getStatements = async (req, res) => {
         const getData = await statementModel.find();
         {
             res.status(200).json(getData);
-        }
+        } 
     } catch (error) {
 
     }
